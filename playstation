@@ -16,7 +16,14 @@
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 </head>
 <body>
+    <div id="root"></div>
     <script type="text/babel">
+
+    function Header(){
+        return <div className="container bg-black text-white p-5">
+           <h1 className="text-left">SONY</h1> 
+        </div>;
+    }
     
     function Tamplate(){
         return(
