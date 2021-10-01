@@ -20,3 +20,14 @@
     margin: 10px;
     margin-left: 20px;
 }
+
+.botao-carrossel {
+    display: flex;
+    justify-content: center;
+}
+
+.botao-carrossel > div > img {
+    width: 30vh;
+    margin: 15px;
+    border-radius: 10px;
+}
