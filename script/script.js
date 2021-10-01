@@ -29,3 +29,13 @@
 
 
 //footer
+
+
+//template
+
+let template = <Template />;
+
+ReactDOM.render(
+    template,
+    document.getElementById('root')
+);
