@@ -1,0 +1,27 @@
+.logo{
+    width: 100px;
+    align-items: right;
+    cursor: pointer;
+}
+#logo_playstation{
+    max-width: 60px;
+}
+form button{
+    border-radius: 20px !important;
+    margin-right: 20px !important;
+}
+form button:hover{
+    background-color: #ccc !important;
+    
+}
+footer{
+    background-color: #00439c;
+    color: #fff;
+    padding: 64px 10px;
+    justify-content: space-between;
+    margin-top: 15%;
+}
+.footer_right ul{
+    list-style: none;
+    width: 200px;
+}
