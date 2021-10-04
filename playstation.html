@@ -56,12 +56,46 @@ function Dropdown(props) {
                             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 {props.title}
                             </a>
-                            <ul className="dropdown-menu color" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">{props.op1}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op2}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op3}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op4}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op5}</a></li>
+                            <ul className="dropdown-menu color " aria-labelledby="navbarDropdown">
+                                <ul className="list-group list-group-horizontal">
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto1} />
+                                        <h3 className="text-center" href="#">{props.op1}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto2} />
+                                        <h3 className="text-center" href="#">{props.op2}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto3} />
+                                        <h3 className="text-center" href="#">{props.op3}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto4} />
+                                        <h3 className="text-center" href="#">{props.op4}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto5} />
+                                        <h3 className="text-center" href="#">{props.op5}</h3></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </ul>
+                            <hr/>
+                            <ul className="list-group list-group-horizontal">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
                             </ul>
                         </li>
                     </ul>
@@ -81,46 +115,61 @@ function Produtos(){
             op2: 'PS4',
             op3: 'PS VR',
             op4: 'PS Plus',
-            op5: 'Comprar jogos'
+            op5: 'Comprar jogos',
+            foto1: '_img/ps5.png',
+            foto2: '_img/ps4.png',
+            foto3: '_img/psVR.png',
+            foto4: '_img/psPlus.png',
+            foto5: '_img/loj.png'
         },
         {
             id: 2,
-            title: 'PS5',
-            op1: 'PS4',
-            op2: 'PS4 Pro',
-            op3: 'PS VR'
+            title: 'Hardware',
+            op1: 'PS5',
+            op2: 'PS4',
+            op3: 'PS PRO',
+            op4: 'PS VR',
+            foto1: '_img/ps5.png',
+            foto2: '_img/ps4.png',
+            foto3: '_img/ps4PRO.png',
+            foto4: '_img/psVr.png'
 
         },
         {
             id: 3,
             title: 'Serviços',
-            op1: 'PS Plus'
+            op1: 'PS Plus',
+            foto1: '_img/psPlus.png'
 
         },
         {
             id: 4,
             title: 'Noticias',
             op1: 'PS Blog',
-            op2: 'Este mês no PlayStation'
+            op2: 'Este mês no PlayStation',
+            foto1: '_img/psblog.png',
+            foto2: '_img/calen.png'
 
         },
         {
             id: 5,
             title: 'Lojas',
-            op1: 'PS Store'
-
+            op1: 'PS Store',
+            foto1: '_img/loj.png'
         },
         {
             id: 6,
             title: 'Suporte',
             op1: 'Suporte',
-            op2: 'Status da PSN'
-
+            op2: 'Status da PSN',
+            foto1: '_img/suporte.png',
+            foto2: '_img/psnS.png'
         }
     ];
     return Produtos.map(ItemMenu=>(
         <Dropdown key={ItemMenu.id} title={ItemMenu.title} op1={ItemMenu.op1} op2={ItemMenu.op2}
-         op3={ItemMenu.op3} op4={ItemMenu.op4} op5={ItemMenu.op5} />
+         op3={ItemMenu.op3} op4={ItemMenu.op4} op5={ItemMenu.op5} foto1={ItemMenu.foto1} foto2={ItemMenu.foto2}
+         foto3={ItemMenu.foto3} foto4={ItemMenu.foto4} foto5={ItemMenu.foto5}/>
     ))
 
 }
