@@ -1,4 +1,4 @@
-
+ 
 a {
     color: hsl(210, 11%, 15%)!important;
 }
@@ -22,12 +22,12 @@ a {
 .menu {
     display: flex;
     justify-content: space-between;
-}
+    width: 100%;
 
-.navs {
-    display: flex;
-}
 
+    background-color: white;
+
+}
 .menu-left {
     display: flex;
     align-items: center;
@@ -70,5 +70,3 @@ a:hover {
 ul{
     list-style: none;
 }
-
-

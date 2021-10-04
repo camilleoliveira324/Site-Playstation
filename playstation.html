@@ -17,6 +17,8 @@
   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+  <script type="text/javascript" src="js/top.js"></script>
 </head>
 <body>
     <div id="root"></div>
@@ -27,7 +29,7 @@
         <div className="sony bg-dark">
             <img className="logo-sony" src="https://www.playstation.com/etc.clientlibs/global_pdc/clientlibs/clientlibs-jetstream/resources/assets/fonts/sony_logo.svg" />
         </div>
-        <div className="menu">
+        <div className="menu" id="menu">
             <div className="menu-left">
                 <img className="logo-play" src="https://logodownload.org/wp-content/uploads/2017/05/playstation-4-logo-ps4-6.png" />
                 <div className="produtos">
@@ -222,7 +224,7 @@ function Produtos(){
     function BotaoCarrossel() {
       return (
         <div className="container-fluid">
-          <div className="botao-carrossel">
+          <div className="botao-carrossel" id="carousel">
             <div>
               <img src="https://gmedia.playstation.com/is/image/SIEPDC/fifa-22-keyart-01-ps4-ps5-en-18aug21?$1600px$" />
             </div>
@@ -266,5 +268,7 @@ function Produtos(){
     )
 
     </script>
+
+
 </body>
 </html>
