@@ -417,7 +417,7 @@
             <div className="menu-left">
                 <img className="logo-play" src="https://logodownload.org/wp-content/uploads/2017/05/playstation-4-logo-ps4-6.png" />
                 <div className="produtos">
-                    <Produtos />
+                    <ItensDropdown />
                 </div>
             </div>
 
@@ -460,8 +460,8 @@ function Dropdown(props) {
 
 
 
-function Produtos(){
-    const Produtos =[
+function ItensDropdown(){
+    const ItensDropdown =[
         {
             id: 1,
             title: 'Jogos',
@@ -506,7 +506,7 @@ function Produtos(){
 
         }
     ];
-    return Produtos.map(ItemMenu=>(
+    return ItensDropdown.map(ItemMenu=>(
         <Dropdown key={ItemMenu.id} title={ItemMenu.title} op1={ItemMenu.op1} op2={ItemMenu.op2}
          op3={ItemMenu.op3} op4={ItemMenu.op4} op5={ItemMenu.op5} />
     ))
