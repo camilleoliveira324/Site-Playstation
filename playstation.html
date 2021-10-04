@@ -62,7 +62,7 @@
     }
 
         
-
+        //Higor
         function Main(props) {
             return (
                 <div>
@@ -119,6 +119,7 @@
                 </footer>
             )
         }
+
     //Emilyn
     function Plus(){
         return(
@@ -162,18 +163,21 @@
         )
     }
 
-  function Texto() {
-    return (
-      <div className="container text-center texto">
-        <br />
-        <br />
-        <h2 className="display-6">Explore o PlayStation®4</h2>
-        <p>Jogos incríveis e diversão sem parar. Nunca houve época <br />
-            melhor para se divertir com o PS4.</p>
-      </div>
-    )
-  }
+        //Higor
+        function Texto() {
+          return (
+            <div className="container text-center texto">
+              <br />
+              <br />
+              <h2 className="display-6">Explore o PlayStation®4</h2>
+              <p>Jogos incríveis e diversão sem parar. Nunca houve época <br />
+                  melhor para se divertir com o PS4.</p>
+            </div>
+          )
+        }
 
+
+        //Higor
         function Card(props) {
         return ( 
                 <div className="card">
@@ -189,6 +193,8 @@
         )
       }
 
+
+        //Higor
       function Produtos() {
         const Produtos = [
           {
@@ -399,134 +405,133 @@
             )
         }
 
+        //Camille e Nauana
+        function Banner() {
+          return (<div>
+                      <Carrossel />
+                      <BotoesCarrossel />
+                </div>)
+        }
 
-    function Banner() {
-      return (<div>
-                  <Carrossel />
-                  <BotoesCarrossel />
-            </div>)
-    }
+        //Jean e Italo
+        function Header() {
+        return <header>
+            <div className="sony bg-dark">
+                <img className="logo-sony" src="https://www.playstation.com/etc.clientlibs/global_pdc/clientlibs/clientlibs-jetstream/resources/assets/fonts/sony_logo.svg" />
+            </div>
+            <div className="menu" id="menu">
+                <div className="menu-left">
+                    <img className="logo-play" src="https://logodownload.org/wp-content/uploads/2017/05/playstation-4-logo-ps4-6.png" />
+                    <div className="produtos">
+                        <ItensDropdown />
+                    </div>
+                </div>
 
-    //Jean e Italo
-    function Header() {
-    return <header>
-        <div className="sony bg-dark">
-            <img className="logo-sony" src="https://www.playstation.com/etc.clientlibs/global_pdc/clientlibs/clientlibs-jetstream/resources/assets/fonts/sony_logo.svg" />
-        </div>
-        <div className="menu" id="menu">
-            <div className="menu-left">
-                <img className="logo-play" src="https://logodownload.org/wp-content/uploads/2017/05/playstation-4-logo-ps4-6.png" />
-                <div className="produtos">
-                    <ItensDropdown />
+
+                <div className="menu-right">
+                    <button className="botao">Iniciar sessão</button>
+                    <i className="bi bi-search"></i>
                 </div>
             </div>
+          </header>
+        }
 
-
-            <div className="menu-right">
-                <button className="botao">Iniciar sessão</button>
-                <i className="bi bi-search"></i>
-            </div>
-
-        </div>
-
-    </header>
-}
-
-function Dropdown(props) {
-    return ( <div className="navs">
-        <nav className="navbar navbar-expand-lg">
-            <div className="container-fluid">
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li className="nav-item dropdown">
-                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                {props.title}
-                            </a>
-                            <ul className="dropdown-menu color" aria-labelledby="navbarDropdown">
-                                <li><a className="dropdown-item" href="#">{props.op1}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op2}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op3}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op4}</a></li>
-                                <li><a className="dropdown-item" href="#">{props.op5}</a></li>
+         //Jean e Italo       
+        function Dropdown(props) {
+            return ( <div className="navs">
+                <nav className="navbar navbar-expand-lg">
+                    <div className="container-fluid">
+                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item dropdown">
+                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        {props.title}
+                                    </a>
+                                    <ul className="dropdown-menu color" aria-labelledby="navbarDropdown">
+                                        <li><a className="dropdown-item" href="#">{props.op1}</a></li>
+                                        <li><a className="dropdown-item" href="#">{props.op2}</a></li>
+                                        <li><a className="dropdown-item" href="#">{props.op3}</a></li>
+                                        <li><a className="dropdown-item" href="#">{props.op4}</a></li>
+                                        <li><a className="dropdown-item" href="#">{props.op5}</a></li>
+                                    </ul>
+                                </li>
                             </ul>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </nav>
                 </div>
-            </div>
-        </nav>
-        </div>
-    )
-}
+            )
+        }
 
 
+        //Jean e Italo
+        function ItensDropdown(){
+            const ItensDropdown =[
+                {
+                    id: 1,
+                    title: 'Jogos',
+                    op1: 'PS5',
+                    op2: 'PS4',
+                    op3: 'PS VR',
+                    op4: 'PS Plus',
+                    op5: 'Comprar jogos'
+                },
+                {
+                    id: 2,
+                    title: 'PS5',
+                    op1: 'PS4',
+                    op2: 'PS4 Pro',
+                    op3: 'PS VR'
 
-function ItensDropdown(){
-    const ItensDropdown =[
-        {
-            id: 1,
-            title: 'Jogos',
-            op1: 'PS5',
-            op2: 'PS4',
-            op3: 'PS VR',
-            op4: 'PS Plus',
-            op5: 'Comprar jogos'
-        },
-        {
-            id: 2,
-            title: 'PS5',
-            op1: 'PS4',
-            op2: 'PS4 Pro',
-            op3: 'PS VR'
+                },
+                {
+                    id: 3,
+                    title: 'Serviços',
+                    op1: 'PS Plus'
 
-        },
-        {
-            id: 3,
-            title: 'Serviços',
-            op1: 'PS Plus'
+                },
+                {
+                    id: 4,
+                    title: 'Noticias',
+                    op1: 'PS Blog',
+                    op2: 'Este mês no PlayStation'
 
-        },
-        {
-            id: 4,
-            title: 'Noticias',
-            op1: 'PS Blog',
-            op2: 'Este mês no PlayStation'
+                },
+                {
+                    id: 5,
+                    title: 'Lojas',
+                    op1: 'PS Store'
 
-        },
-        {
-            id: 5,
-            title: 'Lojas',
-            op1: 'PS Store'
+                },
+                {
+                    id: 6,
+                    title: 'Suporte',
+                    op1: 'Suporte',
+                    op2: 'Status da PSN'
 
-        },
-        {
-            id: 6,
-            title: 'Suporte',
-            op1: 'Suporte',
-            op2: 'Status da PSN'
+                }
+            ];
+            return ItensDropdown.map(ItemMenu=>(
+                <Dropdown key={ItemMenu.id} title={ItemMenu.title} op1={ItemMenu.op1} op2={ItemMenu.op2}
+                op3={ItemMenu.op3} op4={ItemMenu.op4} op5={ItemMenu.op5} />
+            ))
 
         }
-    ];
-    return ItensDropdown.map(ItemMenu=>(
-        <Dropdown key={ItemMenu.id} title={ItemMenu.title} op1={ItemMenu.op1} op2={ItemMenu.op2}
-         op3={ItemMenu.op3} op4={ItemMenu.op4} op5={ItemMenu.op5} />
-    ))
-
-}
-    
-    function Template(){
-        return(
-            <div>
-                <Header />
-                <Banner />
-                <Lancamentos />
-                <Acess />
-                <Horizon />
-                <Plus />
-                <Main/>
-                <Footer />
-            </div>
-        );
-    }
+            
+            function Template(){
+                return(
+                    <div>
+                        <Header />
+                        <Banner />
+                        <Lancamentos />
+                        <Acess />
+                        <Horizon />
+                        <Plus />
+                        <Main/>
+                        <Footer />
+                    </div>
+                );
+            }
     let template = <Template />;
     ReactDOM.render(
         template,
