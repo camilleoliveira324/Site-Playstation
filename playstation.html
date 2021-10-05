@@ -438,82 +438,149 @@
 
          //Jean e Italo       
         function Dropdown(props) {
-            return ( <div className="navs">
-                <nav className="navbar navbar-expand-lg">
-                    <div className="container-fluid">
-                        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li className="nav-item dropdown">
-                                    <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                        {props.title}
-                                    </a>
-                                    <ul className="dropdown-menu color" aria-labelledby="navbarDropdown">
-                                        <li><a className="dropdown-item" href="#">{props.op1}</a></li>
-                                        <li><a className="dropdown-item" href="#">{props.op2}</a></li>
-                                        <li><a className="dropdown-item" href="#">{props.op3}</a></li>
-                                        <li><a className="dropdown-item" href="#">{props.op4}</a></li>
-                                        <li><a className="dropdown-item" href="#">{props.op5}</a></li>
-                                    </ul>
-                                </li>
+    return ( <div className="navs">
+        <nav className="navbar navbar-expand-lg">
+            <div className="container-fluid">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item dropdown">
+                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                {props.title}
+                            </a>
+                            <ul className="dropdown-menu color " aria-labelledby="navbarDropdown">
+                                <ul className="list-group list-group-horizontal">
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto1} />
+                                        <h3 className="text-center" href="#">{props.op1}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto2} />
+                                        <h3 className="text-center" href="#">{props.op2}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto3} />
+                                        <h3 className="text-center" href="#">{props.op3}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto4} />
+                                        <h3 className="text-center" href="#">{props.op4}</h3></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div><a>
+                                        <img src={props.foto5} />
+                                        <h3 className="text-center" href="#">{props.op5}</h3></a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            <hr/>
+                            <ul className="list-group list-group-horizontal">
+                                <li className="m-3">{props.li1}</li>
+                                <li className="m-3">{props.li2}</li>
+                                <li className="m-3">{props.li3}</li>
+                                <li className="m-3">{props.li4}</li>
+                                <li className="m-3">{props.li5}</li>
                             </ul>
-                        </div>
-                    </div>
-                </nav>
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
-            )
+            </div>
+        </nav>
+        </div>
+    )
+}
+
+function ItensDropdown(){
+    const ItensDropdown =[
+        {
+            id: 1,
+            title: 'Jogos',
+            op1: 'PS5',
+            op2: 'PS4',
+            op3: 'PS VR',
+            op4: 'PS Plus',
+            op5: 'Comprar jogos',
+            foto1: '_img/ps5.png',
+            foto2: '_img/ps4.png',
+            foto3: '_img/psVR.png',
+            foto4: '_img/psPlus.png',
+            foto5: '_img/loj.png',
+            li1: 'PlayStation Indies',
+            li2: 'Jogos para PS4 no PS5',
+            li3: 'PlayStation Hits',
+            li4: 'Ofertas e promoções',
+            li5: ''
+        },
+        {
+            id: 2,
+            title: 'Hardware',
+            op1: 'PS5',
+            op2: 'PS4',
+            op3: 'PS PRO',
+            op4: 'PS VR',
+            foto1: '_img/ps5.png',
+            foto2: '_img/ps4.png',
+            foto3: '_img/ps4PRO.png',
+            foto4: '_img/psVr.png',
+            li1: 'Controle sem fio DualSense',
+            li2: 'Headset Pulse 3D',
+            li3: 'Acessórios para o PS5',
+            li4: 'controle sem fio DUALSHOCK 4',
+            li5: 'Acessórios para o PS4'
+
+        },
+        {
+            id: 3,
+            title: 'Serviços',
+            op1: 'PS Plus',
+            foto1: '_img/psPlus.png',
+            li1: 'Entertenimento no PS4',
+            li2: 'Entertenimento no PS5'
+
+        },
+        {
+            id: 4,
+            title: 'Noticias',
+            op1: 'PS Blog',
+            op2: 'Este mês no PlayStation',
+            foto1: '_img/psblog.png',
+            foto2: '_img/calen.png',
+            li1: 'Central de competições'
+
+        },
+        {
+            id: 5,
+            title: 'Lojas',
+            op1: 'PS Store',
+            foto1: '_img/loj.png',
+            li1: 'Comprar Jogos PS5',
+            li2: 'Comprar Jogos PS4',
+            li3: 'Comprar PlayStation Plus',
+            li4: 'Comprar PS4',
+            li5: 'Comprar PS VR'
+        },
+        {
+            id: 6,
+            title: 'Suporte',
+            op1: 'Suporte',
+            op2: 'Status da PSN',
+            foto1: '_img/suporte.png',
+            foto2: '_img/psnS.png'
         }
-
-
-        //Jean e Italo
-        function ItensDropdown(){
-            const ItensDropdown =[
-                {
-                    id: 1,
-                    title: 'Jogos',
-                    op1: 'PS5',
-                    op2: 'PS4',
-                    op3: 'PS VR',
-                    op4: 'PS Plus',
-                    op5: 'Comprar jogos'
-                },
-                {
-                    id: 2,
-                    title: 'PS5',
-                    op1: 'PS4',
-                    op2: 'PS4 Pro',
-                    op3: 'PS VR'
-
-                },
-                {
-                    id: 3,
-                    title: 'Serviços',
-                    op1: 'PS Plus'
-
-                },
-                {
-                    id: 4,
-                    title: 'Noticias',
-                    op1: 'PS Blog',
-                    op2: 'Este mês no PlayStation'
-
-                },
-                {
-                    id: 5,
-                    title: 'Lojas',
-                    op1: 'PS Store'
-
-                },
-                {
-                    id: 6,
-                    title: 'Suporte',
-                    op1: 'Suporte',
-                    op2: 'Status da PSN'
-
-                }
-            ];
-            return ItensDropdown.map(ItemMenu=>(
-                <Dropdown key={ItemMenu.id} title={ItemMenu.title} op1={ItemMenu.op1} op2={ItemMenu.op2}
-                op3={ItemMenu.op3} op4={ItemMenu.op4} op5={ItemMenu.op5} />
+    ];
+    return ItensDropdown.map(ItemMenu=>(
+        <Dropdown key={ItemMenu.id} title={ItemMenu.title} op1={ItemMenu.op1} op2={ItemMenu.op2}
+         op3={ItemMenu.op3} op4={ItemMenu.op4} op5={ItemMenu.op5} foto1={ItemMenu.foto1} foto2={ItemMenu.foto2}
+         foto3={ItemMenu.foto3} foto4={ItemMenu.foto4} foto5={ItemMenu.foto5} li1={ItemMenu.li1} li12={ItemMenu.li12}
+         li3={ItemMenu.li3} li4={ItemMenu.li4} li5={ItemMenu.li5}/>
             ))
 
         }
